@@ -1,0 +1,45 @@
+.bgg{
+    /* background-color: #eeb37f; */
+    background-color: #69c9f0;
+}
+.pc{
+    color: #69c9f0;
+}
+.r-border{
+    border-radius: 30px;
+}
+.button{
+    background-color: #69c9f0;
+    color: aliceblue;
+}
+#button{
+    background-color: #69c9f0;
+    color: aliceblue;
+}
+#img{
+    height: 250px;
+}
+.bggg{
+    /* color: #eeb37f; */
+    background-color: #69c9f0;
+}
+.slash{
+    text-decoration: line-through;
+}
+.sm{
+    font-size: 12px;
+}
+.footer{
+    background-color: #21a2d4;
+}
+.white{
+    color: aliceblue;
+}
+.foot{
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.gone{
+    display: none;
+     transition: 2s ease-in-out;
+}

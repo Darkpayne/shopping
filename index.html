@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="bootstrap-icons-1.7.1/bootstrap-icons-1.7.1/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>E-SHOP</title>
+</head>
+<body>
+    <!-- navbar -->
+    <section>
+        <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-xl">
+          <a href="#home" class="navbar-brand">
+              <span class="fw-bolder"><span class="pc">E</span>-shop</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-between align-center"
+            id="main-nav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item ms-5">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a href="#Products" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a href="#Services" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item d-none d-md-inline me-5">
+                <form class="d-flex d-none d-md-block">
+                  <input
+                    class="form-control me-2 d-none"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn fs-3"
+                    type="submit"
+                  >
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </li>
+              <li class="nav-item me-5 d-none d-md-inline">
+                <button class="btn fs-3"><i class="bi bi-heart-fill"></i></button>   
+              </li>
+              <li class="nav-item  d-none d-md-inline">
+                <button class="btn fs-3"><i class="bi bi-cart4"></i></button>   
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+    </section>
+    <!-- home page -->
+    <section id="home">
+        <div class="container mt-4 bgg p-5 r-border">
+            <div class="row">
+                <div class="col-md-5 ps-5 align-item-center py-5">
+                    <div class="align-self-center "><h2 class="fw-bold">Get yourself the best wears available</h2></div>
+                    <div class="d-grid mt-4">
+                        <!-- <form class="d-flex">
+                            <input
+                                class="form-control rounded-pill"
+                                type="text"
+                                placeholder='Search your favorite wears'
+                                aria-label="Search"
+                            />
+                        </form> -->
+                        <button class="btn btn-light text-muted rounded-pill p-2 pe-5"><i class="bi bi-search pe-2"></i> Search your favorite wears</button>
+                    </div>
+                </div>
+                <div class="col-5 d-none d-md-block">
+                    <div>
+                        <img src="./assets/shoe concept.jpg" alt="shoe" class="img-fluid r-border">
+                    </div>
+                </div>
+                <div class="col-2 d-none d-md-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-9"></div>
+                            <div class="col-3">
+                                <div class="container mt-3">
+                                    <div class="row justify-self-center">
+                                        <div class="col">
+                                            <i class="bi bi-facebook fs-4"></i>
+                                            <i class="bi bi-instagram fs-4"></i>
+                                            <i class="bi bi-twitter fs-4"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- collection carousel -->
+    <section>
+        <div class="container mt-5 text-center">
+            <h2 class="fw-bold">Latest <span class="pc">Collection</span></h2>
+        </div>
+        <div class="container pb-5">
+            <div class="carousel slide my-5 pt-4" id="carouselExampleControl" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- caro 1 -->
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <!-- card 1 -->
+                                <div class="col-md-3 mt-4">
+                                    <div class="text-center"><img src="./assets/sweats.jpg" id="img" alt="" class="img-fluid r-border"></div>
+
+                                        <div class="row justify-content-between mt-4">
+                                            <div class="col"><h6>Sweater</h6></div>
+                                            <div class="col text-end"><h6 class="pc">$14.99</h6></div>
+                                        </div>
+                                        <div class="d-grid">
+                                            <button class="btn mt-2 btn-light rounded-pill" id="button">Add to Cart</button>
+                                        </div>
+                                </div>
+                                <!-- card 2 -->
+                                <div class="col-md-3 mt-4 ">
+                                    <div class="text-center"><img src="./assets/cool jackk.jpg" id="img" alt="" class="img-fluid r-border"></div>
+
+                                        <div class="row justify-content-between mt-4">
+                                            <div class="col"><h6>Jacket</h6></div>
+                                            <div class="col text-end"><h6 class="pc">$54.99</h6></div>
+                                        </div>
+                                        <div class="d-grid">
+                                            <button class="btn btn-light mt-2  rounded-pill" id="button">Add to Cart</button>
+                                        </div>
+                                </div>
+                                <!-- card 3 -->
+                                <div class="col-md-3 mt-4">
+                                    <div class="text-center"><img src="./assets/shirt.png" id="img"  alt="" class="img-fluid r-border"></div>
+
+                                        <div class="row justify-content-between mt-4">
+                                            <div class="col"><h6>Shirt</h6></div>
+                                            <div class="col text-end"><h6 class="pc">$9.99</h6></div>
+                                        </div>
+                                        <div class="d-grid">
+                                            <button class="btn btn-light mt-2  rounded-pill" id="button">Add to Cart</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- caro 2 -->
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <!-- card 2 -->
+                                <div class="col-md-3 mt-4">
+                                    <div class="text-center"><img src="./assets/red shoe.jpg" id="img"  alt="" class="img-fluid r-border"></div>
+
+                                        <div class="row justify-content-between mt-4">
+                                            <div class="col"><h6>Sneaker</h6></div>
+                                            <div class="col text-end"><h6 class="pc">$79.99</h6></div>
+                                        </div>
+                                        <div class="d-grid">
+                                            <button class="btn btn-light mt-2  rounded-pill" id="button">Add to Cart</button>
+                                        </div>
+                                </div>
+                                <!-- card 2 -->
+                                <div class="col-md-3 mt-4">
+                                    <div class="text-center"><img src="./assets/skeechers.jpg" alt="" id="img" class="img-fluid r-border"></div>
+
+                                        <div class="row justify-content-between mt-4">
+                                            <div class="col"><h6>Skeechers</h6></div>
+                                            <div class="col text-end"><h6 class="pc">$50.00</h6></div>
+                                        </div>
+                                        <div class="d-grid">
+                                            <button class="btn btn-light mt-2  rounded-pill" id="button">Add to Cart</button>
+                                        </div>
+                                </div>
+                                <!-- card 3 -->
+                                <div class="col-md-3 mt-4 card-dark">
+                                    <div class="text-center"><img src="./assets/sweatsss.jpg" alt="" id="img" class="img-fluid r-border"></div>
+
+                                        <div class="row justify-content-between mt-4">
+                                            <div class="col"><h6>Sweater</h6></div>
+                                            <div class="col text-end"><h6 class="pc">$19.00</h6></div>
+                                        </div>
+                                        <div class="d-grid">
+                                            <button class="btn btn-light mt-2  rounded-pill" id="button">Add to Cart</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carousel buttons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControl" data-bs-slide='prev'>
+                    <span class="carousel-control-prev-icon bggg" aria-hidden="true"></span>
+                    <span class="visually-hiden"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControl" data-bs-slide='next'>
+                    <span class="carousel-control-next-icon bggg" aria-hidden="true"></span>
+                    <span class="visually-hiden"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- products -->
+    <section id="Products">
+        <div class="container text-center mt-5">
+            <h2 class="fw-bold">Selling <span class="pc">Products</span></h2>
+        </div>
+        <div class="container my-5">
+            <div class="container my-5">
+                <div class="mt-4 text-center">
+                    <button class="btn  rounded-pill button" id="all">All</button>
+                    <!-- <button class="btn  rounded-pill" id="shirts">Shirts</button> -->
+                    <button class="btn  rounded-pill" id="shoes">Shoes</button>
+                    <button class="btn  rounded-pill" id="heels">Heels</button>
+                    <button class="btn  rounded-pill" id="sweaters">Sweater</button>
+                </div>
+                <div class="row my-5">
+                    <!-- card 1 -->
+                    <div class="col-md-4 my-4" id="sweater1">
+                        <div class="text-center">
+                            <img src="./assets/sweats.jpg" alt="" class="img-fluid r-border" id="img">
+                        </div>
+                        <div class="mt-3"><h6>Sweater</h6></div>
+                        <div class=""><p class="text-muted">$29.99</p></div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col-md-4 my-4" id="shoe1">
+                        <div class="text-center">
+                            <img src="./assets/vans.jpg" alt="" class="img-fluid r-border" id="img">
+                        </div>
+                        <div class="mt-3"><h6>Vans</h6></div>
+                        <div class=""><p class="text-muted">$69.99</p></div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col-md-4 my-4" id="shoe2">
+                        <div class="text-center">
+                            <img src="./assets/red shoe.jpg" alt="" class="img-fluid r-border" id="img">
+                        </div>
+                        <div class="mt-3"><h6>Red Sneaker</h6></div>
+                        <div class=""><p class="text-muted">$79.99</p></div>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="row"> -->
+                    <!-- card 1 -->
+                    <div class="col-md-4 my-4" id="sweater">
+                        <div class="text-center">
+                            <img src="./assets/jackets.jpg" alt="" class="img-fluid r-border" id="img">
+                        </div>
+                        <div class="mt-3"><h6>Jacket</h6></div>
+                        <div class=""><p class="text-muted">$49.99</p></div>
+                    </div>
+                    <!-- card 2 -->
+                   <div class="col-md-4 my-4" id="shoe">
+                        <div class="text-center">
+                            <img src="./assets/leg and shoe.jpg" alt="" class="img-fluid r-border" id="img">
+                        </div>
+                        <div class="mt-3"><h6>Sneaker</h6></div>
+                        <div class=""><p class="text-muted">$59.99</p></div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col-md-4 my-4" id="heel">
+                        <div class="text-center">
+                            <img src="./assets/heels.jpg" alt="" class="img-fluid r-border" id="img">
+                        </div>
+                        <div class="mt-3"><h6>Heels</h6></div>
+                        <div class=""><p class="text-muted">$99.99</p></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- best deals -->
+    <section id="best-deals">
+        <div class="container mt-5">
+            <div class="row justify-content-center my-5">
+                <div class="col-12 text-center my-5"><h2 class="fw-bold">Best <span class="pc">Deals</span></h2></div>
+                <div class="col-12 text-center"> 
+                    <button class="btn rounded-pill button" id="ball">All</button>
+                    <button class="btn  rounded-pill "  id="bshirts">Shirts</button>
+                    <button class="btn rounded-pill " id="bshoes">Shoes</button>
+                    <!-- <button class="btn  rounded-pill ">Heels</button> -->
+                    <button class="btn rounded-pill " id="bsweaters">Sweater</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 my-3" id="bshoe">
+                      <div class="text-center">
+                            <img src="./assets/skeechers.jpg" alt="" class="img-fluid r-border" id="img">
+                        </div>
+                        <div class="mt-3"><h6>Sneaker</h6></div>
+                        <div class=""><p class="pc">$39.99 <span class="text-muted slash sm">$59.99</span> </p></div>
+                </div>
+                <div class="col-md-3 my-3" id="bsweater">
+                      <div class="text-center">
+                            <img src="./assets/sweatsss.jpg" alt="" class="img-fluid r-border" id="img">
+                        </div>
+                        <div class="mt-3"><h6>Sweeter</h6></div>
+                        <div class=""><p class="pc">$39.99 <span class="text-muted slash sm">$29.99</span> </p></div>
+                    </div>
+                    <div class="col-md-3 my-3" id="bshirt">
+                      <div class="text-center">
+                            <img src="./assets/shirt 1.png" alt="" class="img-fluid r-border" id="img">
+                        </div>
+                        <div class="mt-3"><h6>Shirt</h6></div>
+                        <div class=""><p class="pc">$39.99 <span class="text-muted slash sm">$19.99</span> </p></div>
+                </div>
+                <div class="col-md-3 my-3" id="bshoe1">
+                      <div class="text-center">
+                            <img src="./assets/sneakers.jpg" alt="" class="img-fluid r-border" id="img">
+                        </div>
+                        <div class="mt-3"><h6>White Sneaker</h6></div>
+                        <div class=""><p class="pc">$39.99 <span class="text-muted slash sm">$69.99</span> </p></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- what will you get -->
+    <section id="Services" >
+        <div class="container mt-5 pt-3 text-center">
+            <h2 class="fw-bold"><span class="pc">What you will get</span></h2>
+        </div>
+        <div class="container">
+            <div class="row justify-content-around my-4">
+                <div class="col-md-3 my-3 card border-0 shadow r-border">
+                      <div class="text-center mt-3">
+                            <img src="./assets/delivery.jpg" alt="" class="img-fluid r-border" id="imgg">
+                        </div>
+                        <div class="mt-3 text-center"><h6>Fast Delivery</h6></div>
+                        <div class=""><p class="text-muted text-center sm">Our company prides itself in very fast and efficient delivery </p></div>
+                </div>
+                <div class="col-md-3 my-3 card border-0 shadow r-border">
+                      <div class="text-center mt-3">
+                            <img src="./assets/pro return.jpg" alt="" class="img-fluid r-border" id="imgg">
+                        </div>
+                        <div class="mt-3 text-center"><h6>Product return</h6></div>
+                        <div class=""><p class="text-muted text-center sm">Our company prides itself in customer satisfaction </p></div>
+                </div>
+                <div class="col-md-3 my-3 card border-0 shadow r-border">
+                      <div class="text-center mt-3">
+                            <img src="./assets/squid game.jpg" alt="" class="img-fluid r-border" id="imgg">
+                        </div>
+                        <div class="mt-3 text-center"><h6>Style Variety </h6></div>
+                        <div class=""><p class="text-muted text-center sm">Our company prides itself in Variety of styles </p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section id="footer" class="footer foot">
+        <div class="container">
+            <div class="row mt-5 justify-content-around">
+                <div class="col-md-4 text-center my-4">
+                    <div> 
+                        <a href="#home" class="navbar-brand m-3">
+                         <h3 class="fw-bolder white"><i class="bi bi-cart4 fs-1"></i><span class="white"></span class=''>E-shop</h3>
+                        </a>     
+                        <h5 class="white mt-3 sm">Powered by Joshua Company Limited</h5>   
+                    </div>
+                </div>
+                <div class="col-md-2 my-4">
+                    <div class="my-3"><h5 class="white">MENU</h5></div>
+                    <div>
+                        <p class="fw-light  white sm">Home</p>
+                        <p class="fw-light  white sm">About</p>
+                        <p class="fw-light  white sm">Terms & condition</p>
+                        <p class="fw-light  white sm">Contact</p>
+                        <p class="fw-light  white sm">Bookings & order</p>
+                        <p class="fw-light white sm">Login & signup</p>
+                    </div>
+                </div>
+                <div class="col-md-2 my-4">
+                    <div class="my-3"><h5 class="white">COLLECTION</h5></div>
+                    <div class="my-3">
+                        <p class="fw-light  white sm">Shirt</p>
+                        <p class="fw-light  white sm">Shoes</p>
+                        <p class="fw-light  white sm">Heels</p>
+                        <p class="fw-light  white sm">Sweater</p>
+                        <p class="fw-light  white sm">Hoodies</p>
+                    </div>
+                </div>
+                <div class="col-md-3 my-4">
+                    <div class="my-3"><h5 class="white">CONTACT</h5></div>
+                    <div class="my-3">
+                        <p class="fw-light  white sm"><i class="bi bi-telephone-fill"></i> +234 (0)90 6942 0538</p>
+                        <p class="fw-light  white sm"><i class="bi bi-envelope-fill"></i> Joshuaclifford4336@yahoo.com</p>
+                        <p class="fw-light  white sm"><i class="bi bi-facebook"></i> Joshua Clifford</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-1">
+                <div class="text-center fw-light">
+                    <p class="white sm pb-2">
+                            COPYRIGHT 2021 | Build by Joshua Clifford with love | All rights are
+                            reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+    <script src="bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
